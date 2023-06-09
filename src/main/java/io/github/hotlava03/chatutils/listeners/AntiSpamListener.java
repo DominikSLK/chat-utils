@@ -16,7 +16,7 @@ import static io.github.hotlava03.chatutils.util.StringUtils.isNumeric;
 public class AntiSpamListener implements Consumer<ReceiveMessageEvent> {
     @Override
     public void accept(ReceiveMessageEvent e) {
-        if (ChatStorage.getInstance().isBlockingChatEvents()) return;
+        /*if (ChatStorage.getInstance().isBlockingChatEvents()) return;
         var client = MinecraftClient.getInstance();
         var chat = client.inGameHud.getChatHud();
         var serverInfo = client.getCurrentServerEntry();
@@ -90,6 +90,6 @@ public class AntiSpamListener implements Consumer<ReceiveMessageEvent> {
             lineMatchCount = 0;
         }
 
-        if (spamCounter > 1) e.getTextAsMutable().append(" §8[§cx" + spamCounter + "§8]");
+        if (spamCounter > 1) e.getTextAsMutable().append(" §8[§cx" + spamCounter + "§8]");*/
     }
 }
